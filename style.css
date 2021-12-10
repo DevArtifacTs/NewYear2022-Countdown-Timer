@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;600;700;800&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    /* background-image: url("bg.jpg"); */
+    background-repeat: none ;
+    background-position:left;
+
+    overflow: hidden;
+    
+}
+
+/* global style */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    background-color: #96C7C1 ;
+    max-width: 20vw;
+    max-height: 8vh;
+
+    padding: 0 20px;
+    
+    
+    line-height: 5vh;
+    text-align:center;
+    text-transform: uppercase ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vw;
+
+    color: #FFFFFF;
+}
+
+/* canvas */
+#weather   {
+    background-image: url("bg.jpg");
+    background-repeat: none ;
+    background-position:bottom;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/* header */
+
+header {
+
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+
+header a {
+    display: inline-block;
+    
+}
+
+.wrapper {
+    
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
+}
+.wrapper h1 {
+    text-align: center;
+    font-size: 6em;
+    font-weight: bolder;
+}
+
+.display {
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+
+    /* border-left: 5px solid black;
+    border-right: 5px solid black; */
+}
+
+.display span {
+    display: block;
+}
